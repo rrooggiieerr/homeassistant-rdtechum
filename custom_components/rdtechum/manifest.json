@@ -1,0 +1,20 @@
+{
+  "domain": "rdtechum",
+  "name": "RDTech UM series",
+  "version": "0.0.1",
+  "config_flow": true,
+  "documentation": "https://github.com/rrooggiieerr/homeassistant-rdtechum",
+  "issue_tracker": "https://github.com/rrooggiieerr/homeassistant-rdtechum/issues",
+  "requirements": [
+  ],
+  "dependencies": ["bluetooth"],
+  "codeowners": [
+    "@rrooggiieerr"
+  ],
+  "bluetooth": [
+  	{ "local_name": "UM24C" },
+  	{ "local_name": "UM25C" },
+  	{ "local_name": "UM34C" }
+  ],
+  "iot_class": "local_polling"
+}
