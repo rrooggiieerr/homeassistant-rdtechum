@@ -16,5 +16,6 @@
   	{ "local_name": "UM25C" },
   	{ "local_name": "UM34C" }
   ],
-  "iot_class": "local_polling"
+  "iot_class": "local_polling",
+  "integration_type": "device"
 }
