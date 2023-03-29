@@ -17,6 +17,9 @@ resistance, capacity, temperature, data line voltage, and charging mode.
 - Add this repository URL to the **Custom repositories** and select
 **Integration** as the **Category**
 - Click **Add**
+- Close the **Custom repositories** menu
+- Select **+ Explore & download repositories** and search for *RDTech UM series*
+- Select **Download**
 - Restart Home Assistant
 
 ### Manually
@@ -30,8 +33,9 @@ integration has been installed.
 
 ## Credits
 Special thanks go to William Vallet for creating the
-[Python UM meter library](https://github.com/valletw/pyummeter).
+[Python UM meter library](https://github.com/valletw/pyummeter) which this
+integration heavily relies on.
 
-Do you enjoy using this Home Assistant integration? Then consider sponsoring
-my work:
+Do you enjoy using this Home Assistant integration? Then consider supporting
+my work:\
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >](https://www.buymeacoffee.com/rrooggiieerr)  
