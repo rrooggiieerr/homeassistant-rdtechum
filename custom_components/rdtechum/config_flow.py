@@ -1,4 +1,5 @@
 """Config flow for RDTech UM series integration."""
+
 from __future__ import annotations
 
 import logging
@@ -10,9 +11,8 @@ from homeassistant.components.bluetooth import (
     BluetoothServiceInfoBleak,
     async_discovered_service_info,
 )
-from homeassistant.config_entries import ConfigFlow
+from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from homeassistant.const import CONF_ADDRESS
-from homeassistant.data_entry_flow import FlowResult
 
 from .const import DOMAIN, LOCAL_NAMES
 
@@ -29,7 +29,7 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def async_step_bluetooth(
         self, discovery_info: BluetoothServiceInfoBleak
-    ) -> FlowResult:
+    ) -> ConfigFlowResult:
         """Handle the bluetooth discovery step."""
         await self.async_set_unique_id(discovery_info.address)
         self._abort_if_unique_id_configured()
@@ -46,7 +46,7 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
-    ) -> FlowResult:
+    ) -> ConfigFlowResult:
         """Handle the user step to pick discovered device."""
         errors: dict[str, str] = {}
 
