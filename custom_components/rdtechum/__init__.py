@@ -1,5 +1,4 @@
 """The RDTech UM series integration."""
-from __future__ import annotations
 
 import asyncio
 import logging
